@@ -7,11 +7,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Projeto Integrado Multidisciplinar (PIM) 4",
     year: 2023,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Projeto criado para a conclusão do quarto semestre do curso de Análise e Desenvolvimento de Sistemas da UNIP Ribeirão Preto - 2023.",
+    url: "https://github.com/erickpaluan/pim4",
   },
   {
     title: "Project Two",

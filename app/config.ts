@@ -4,7 +4,7 @@ export const metaData = {
   name: "Erick Paluan",
   ogImage: "/opengraph-image.png",
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "Especialista em design gráfico, mídias sociais, TI e UI/UX design, sempre buscando soluções criativas e eficazes. Foco em tecnologia, aprendizado contínuo e colaboração para transformar ideias em resultados.",
 };
 
 export const socialLinks = {
