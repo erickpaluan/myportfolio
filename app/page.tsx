@@ -21,7 +21,8 @@ export default function Page() {
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
+      🇺🇸
+      <p>
         Graduated in Information Systems, I specialize in graphic design, social
         media management, IT, and UI/UX design.
         </p>
@@ -33,8 +34,21 @@ export default function Page() {
         </p>
         <p>
         Take a look at my <a href="/projects">projects</a> and see how I can help you! ;)
+        </p>
+        <p>-</p>
 
-          
+        🇧🇷
+        <p>
+        Graduado em Sistemas de Informação, sou especializado em design gráfico, gestão de mídias sociais, TI e UI/UX design.
+        </p>
+        <p>
+        Apaixonado por tecnologia e naturalmente curioso, estou sempre aprendendo e desenvolvendo novas habilidades. Minha abordagem é calma e focada em soluções, com grande capacidade para enfrentar desafios diversos.
+        </p>
+        <p>
+        Compartilhar conhecimento e aprender com diferentes áreas me motiva, e acredito firmemente no trabalho em equipe para o crescimento pessoal e profissional.
+        </p>
+        <p>
+        Confira meus <a href="/projects">projetos</a> e veja como posso ajudar você! ;)
         </p>
 
       </div>
