@@ -1,10 +1,10 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
+  baseUrl: "https://paluan.co/",
   title: "Erick Paluan",
   name: "Erick Paluan",
   ogImage: "/opengraph-image.png",
   description:
-    "Especialista em design gráfico, mídias sociais, TI e UI/UX design, sempre buscando soluções criativas e eficazes. Foco em tecnologia, aprendizado contínuo e colaboração para transformar ideias em resultados.",
+    "Especialista em design gráfico, mídias sociais, TI e UI/UX, focado em soluções criativas, tecnologia e aprendizado contínuo para transformar ideias em resultados.",
 };
 
 export const socialLinks = {
