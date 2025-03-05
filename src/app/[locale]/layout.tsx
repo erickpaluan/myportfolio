@@ -3,12 +3,9 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "../../components/nav";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "../../components/footer";
 import { ThemeProvider } from "../../components/theme-switch";
 import { metaData } from "../../config";
-import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -69,10 +66,11 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
+    <NextIntlClientProvider messages={messages}>
     <html lang={locale} className={cx(GeistSans.variable, GeistMono.variable)}>
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
+        <section>
+        <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
@@ -82,12 +80,13 @@ export default async function RootLayout({
               <Navbar />
               {children}
               <Footer />
-              <Analytics />
-              <SpeedInsights />
             </main>
           </ThemeProvider>
-        </NextIntlClientProvider>
+        </section>
+
+
       </body>
     </html>
+    </NextIntlClientProvider>
   );
 }

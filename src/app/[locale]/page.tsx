@@ -12,8 +12,6 @@ export default function Page({ params }: Props) {
   const t = useTranslations("Page");
 
   return (
-    <html>
-      <body>
         <section>
           <a href={socialLinks.twitter} target="_blank">
             <Image
@@ -40,7 +38,5 @@ export default function Page({ params }: Props) {
             </p>
           </div>
         </section>
-      </body>
-    </html>
   );
 }

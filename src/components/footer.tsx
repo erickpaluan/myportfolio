@@ -11,6 +11,7 @@ import {
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "../config";
 
+
 const YEAR = new Date().getFullYear();
 
 function SocialLink({ href, icon: Icon }) {
@@ -29,6 +30,7 @@ function SocialLinks() {
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      
     </div>
   );
 }
@@ -54,6 +56,7 @@ export default function Footer() {
         }
       `}</style>
       <SocialLinks />
+      
     </small>
   );
 }

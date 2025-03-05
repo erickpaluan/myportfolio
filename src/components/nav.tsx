@@ -1,7 +1,10 @@
+'use client';
+
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export function Navbar() {
   const t = useTranslations("Nav");
@@ -31,6 +34,7 @@ export function Navbar() {
             </Link>
           ))}
           <ThemeSwitch />
+          <LanguageSwitcher/>
         </div>
       </div>
     </nav>
