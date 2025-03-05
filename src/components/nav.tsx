@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
-
-const navItems = {
-  //"/blog": { name: "Blog" },
-  "/projects": { name: "Projects" },
-  //"/photos": { name: "Photos" },
-};
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
+  const t = useTranslations("Nav");
+
+  const navItems = {
+    "/projects": { name: t("projects") },
+    // "/blog": { name: t("blog") },
+    //"/en/photos": { name: t("photos") },
+  };
+
   return (
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">

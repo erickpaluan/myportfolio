@@ -1,0 +1,14 @@
+{
+  "Page": {
+    "title": "UI Design & Frontend.",
+    "about": "<p>Graduated in Information Systems, I specialize in graphic design, social media management, IT, and UI/UX design.</p><p>With a passion for technology and a natural curiosity, I am continuously learning and developing new skills, my approach is calm and solution-focused, with a strong ability to tackle diverse challenges.</p><p>Sharing knowledge and gaining insights across different areas energizes me, and I firmly believe in teamwork as a pathway to personal and professional growth.</p><p>Take a look at my <a>projects</a> and see how I can help you! ;)</p>"
+  },
+  "Nav": {
+    "projects": "Projects",
+    "photos": "Photos"
+  },
+  "Projects": {
+    "project-title": "Multidisciplinary Integrated Project (MIP) 4",
+    "project-description": "Project for the completion of the 4th semester in Systems Analysis and Development, UNIP Ribeirão Preto, 2023."
+  }
+}
