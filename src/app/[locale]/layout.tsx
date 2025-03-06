@@ -54,39 +54,48 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
-  const { locale } = await params;
+  // Verifica se o idioma é válido
+  const { locale } = params;
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Busca as mensagens para o idioma
   const messages = await getMessages();
+
   return (
-    <NextIntlClientProvider messages={messages}>
     <html lang={locale} className={cx(GeistSans.variable, GeistMono.variable)}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem("theme-preference") || "dark";
+                document.documentElement.classList.add(theme);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
-        <section>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          attribute="class"
+          storageKey="theme-preference"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider messages={messages}>
             <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[640px] w-full">
               <Navbar />
               {children}
               <Footer />
             </main>
-          </ThemeProvider>
-        </section>
-
-
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
-    </NextIntlClientProvider>
   );
 }
