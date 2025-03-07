@@ -4,25 +4,21 @@ import { use } from "react";
 //import PageLayout from "@/components/PageLayout";
 
 type Props = {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
 export default function PathnamesPage({ params }: Props) {
-  const { locale } = use(params);
+  const { locale } = params;
 
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations("PathnamesPage");
+  const t = useTranslations("Projects");
 
   return (
     <div className="max-w-[490px]">
-      {t.rich("description", {
-        p: (chunks) => <p className="mt-4">{chunks}</p>,
-        code: (chunks) => (
-          <code className="font-mono text-white">{chunks}</code>
-        ),
-      })}
+      {t("project-title")}
+      {t("project-description")}
     </div>
   );
 }

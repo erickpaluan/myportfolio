@@ -8,7 +8,7 @@
     "photos": "Fotos"
   },
   "Projects": {
-    "title": "Projeto Integrado Multidisciplinar (PIM) 4",
-    "description": "Projeto para conclusão do 4º semestre de Análise e Desenvolvimento de Sistemas, UNIP Ribeirão Preto, 2023."
+    "project-title": "Projeto Integrado Multidisciplinar (PIM) 4",
+    "project-description": "Projeto para conclusão do 4º semestre de Análise e Desenvolvimento de Sistemas, UNIP Ribeirão Preto, 2023."
   }
 }
