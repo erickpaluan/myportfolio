@@ -1,0 +1,15 @@
+{
+  "Page": {
+    "title": "UI Design & Frontend.",
+    "about": "<p>Graduado em Sistemas de Informação, sou especializado em design gráfico, gestão de mídias sociais, TI e UI/UX design.</p><p>Apaixonado por tecnologia e naturalmente curioso, estou sempre aprendendo e desenvolvendo novas habilidades. Minha abordagem é calma e focada em soluções, com grande capacidade para enfrentar desafios diversos.</p><p>Compartilhar conhecimento e aprender com diferentes áreas me motiva, e acredito firmemente no trabalho em equipe para o crescimento pessoal e profissional.</p><p>Confira meus <a>projetos</a> e veja como posso ajudar você! ;)</p>"
+  },
+  "Nav": {
+    "projects": "Projetos",
+    "photos": "Fotos"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "project-title": "Projeto Integrado Multidisciplinar (PIM) 4",
+    "project-description": "Projeto para conclusão do 4º semestre de Análise e Desenvolvimento de Sistemas, UNIP Ribeirão Preto, 2023."
+  }
+}
