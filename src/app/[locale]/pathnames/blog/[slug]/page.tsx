@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CustomMDX } from "app/components/mdx";
-import { formatDate, getBlogPosts } from "app/lib/posts";
-import { metaData } from "app/config";
+import { CustomMDX } from "@/components/mdx";
+import { formatDate, getBlogPosts } from "@/app/[locale]/pathnames/lib/posts";
+import { metaData } from "@/config";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -14,11 +14,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({
   params,
+}: {
+  params: { slug: string };
 }): Promise<Metadata | undefined> {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
-  if (!post) {
-    return;
-  }
+  if (!post) return;
 
   let {
     title,
@@ -26,6 +26,7 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
+
   let ogImage = image
     ? image
     : `${metaData.baseUrl}/og?title=${encodeURIComponent(title)}`;
@@ -39,11 +40,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime,
       url: `${metaData.baseUrl}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
+      images: [{ url: ogImage }],
     },
     twitter: {
       card: "summary_large_image",
@@ -54,7 +51,7 @@ export async function generateMetadata({
   };
 }
 
-export default function Blog({ params }) {
+export default function Blog({ params }: { params: { slug: string } }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {

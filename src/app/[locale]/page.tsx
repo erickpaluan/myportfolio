@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { socialLinks } from "../../config";
+import { socialLinks } from "@/config";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
