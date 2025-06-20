@@ -6,7 +6,7 @@ import Link from "next/link";
 import { routing } from "../i18n/routing"; // Importe as rotas definidas no routing.tsx
 import { ThemeSwitch } from "./theme-switch";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { metaData } from "src/config";
+import { metaData } from "@/config";
 
 export function Navbar() {
   const locale = useLocale(); // Obtém o idioma atual
