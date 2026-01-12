@@ -1,7 +1,7 @@
 {
   "Page": {
-    "title": "UI Design & Frontend.",
-    "about": "<p>Graduado em Sistemas de Informação, sou especializado em design gráfico, gestão de mídias sociais, TI e UI/UX design.</p><p>Apaixonado por tecnologia e naturalmente curioso, estou sempre aprendendo e desenvolvendo novas habilidades. Minha abordagem é calma e focada em soluções, com grande capacidade para enfrentar desafios diversos.</p><p>Compartilhar conhecimento e aprender com diferentes áreas me motiva, e acredito firmemente no trabalho em equipe para o crescimento pessoal e profissional.</p><p>Confira meus <a>projetos</a> e veja como posso ajudar você! ;)</p>"
+    "title": "UI Engineer & Product Designer",
+    "about": "<p> Olá! Sou Erick Paluan, graduado em Sistemas de Informação e especializado no ponto de encontro entre design e código.</p><p>Passei os últimos 15 anos dominando duas áreas que raramente conversam: criei identidades visuais, finalizei materiais para impressão offset, e desenhei interfaces digitais. Mas não parei no Figma.</p><p>Aprendi a programar para transformar protótipos em produtos reais. Criei o departamento de TI do CEARP, desenvolvi sistemas em produção, e descobri que minha maior força está exatamente onde design e desenvolvimento se encontram.</p><p>Hoje, desenvolvo aplicações fullstack com React, Node.js e TypeScript, sempre com o olhar de quem entende profundamente de UX. Não preciso de tradutor entre design e dev — eu falo as duas línguas.</p>"
   },
   "Nav": {
     "projects": "Projetos",
