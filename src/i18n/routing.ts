@@ -9,6 +9,10 @@ export const routing = defineRouting({
       en: "/projects",
       pt: "/projetos",
     },
+    "/blog": {
+      en: "/blog",
+      pt: "/blog",
+    },
   },
 });
 
