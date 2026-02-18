@@ -12,5 +12,5 @@ export const socialLinks = {
   github: "https://github.com/erickpaluan",
   instagram: "https://www.instagram.com/erickpaluan/",
   linkedin: "https://www.linkedin.com/in/erickpaluan/",
-  email: "mailto:erickpaluan@gmail.com",
+  email: "mailto:contato@erickpaluan.com.br",
 };
