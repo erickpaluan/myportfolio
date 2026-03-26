@@ -38,6 +38,7 @@ export default function PathnamesPage({ params }: Props) {
           <a
             href="https://www.linkedin.com/pulse/o-dia-em-que-um-projeto-feito-interior-de-sp-chegou-à-erick-paluan-zvtpf/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="w-full flex justify-between items-baseline">
               <span className="text-black dark:text-white font-medium tracking-tight">
