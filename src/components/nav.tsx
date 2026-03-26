@@ -16,8 +16,6 @@ export function Navbar() {
   // Navegação com base nas rotas definidas no routing.tsx
   const navItems = {
     "/projects": { nameKey: "projects" }, // Usamos a chave para tradução
-    "/blog": { nameKey: "blog" },
-    // "/photos": { nameKey: "photos" },
   };
 
   // Função para obter o caminho correto para cada item

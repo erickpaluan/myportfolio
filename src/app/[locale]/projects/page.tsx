@@ -19,7 +19,7 @@ export default function PathnamesPage({ params }: Props) {
 
       <div className="flex flex-col gap-8">
         {/* Projeto 1 */}
-        <div>
+        <div className="projeto">
           <div className="w-full flex justify-between items-baseline">
             <span className="text-black dark:text-white font-medium tracking-tight">
               {t("project-title01")}
@@ -34,22 +34,27 @@ export default function PathnamesPage({ params }: Props) {
         </div>
 
         {/* Projeto 2 */}
-        <div>
-          <div className="w-full flex justify-between items-baseline">
-            <span className="text-black dark:text-white font-medium tracking-tight">
-              {t("project-title02")}
-            </span>
-            <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-              Reconhecimento pela Microsoft
-            </span>
-          </div>
-          <p className="prose prose-neutral dark:prose-invert pt-3">
-            {t("project-description02")}
-          </p>
+        <div className="projeto">
+          <a
+            href="https://www.linkedin.com/pulse/o-dia-em-que-um-projeto-feito-interior-de-sp-chegou-à-erick-paluan-zvtpf/"
+            target="_blank"
+          >
+            <div className="w-full flex justify-between items-baseline">
+              <span className="text-black dark:text-white font-medium tracking-tight">
+                {t("project-title02")}
+              </span>
+              <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
+                Reconhecimento pela Microsoft
+              </span>
+            </div>
+            <p className="prose prose-neutral dark:prose-invert pt-3">
+              {t("project-description02")}
+            </p>
+          </a>
         </div>
 
         {/* Projeto 3 */}
-        <div>
+        <div className="projeto">
           <div className="w-full flex justify-between items-baseline">
             <span className="text-black dark:text-white font-medium tracking-tight">
               {t("project-title03")}
@@ -64,7 +69,7 @@ export default function PathnamesPage({ params }: Props) {
         </div>
 
         {/* Projeto 4 */}
-        <div>
+        <div className="projeto">
           <div className="w-full flex justify-between items-baseline">
             <span className="text-black dark:text-white font-medium tracking-tight">
               {t("project-title04")}
@@ -79,7 +84,7 @@ export default function PathnamesPage({ params }: Props) {
         </div>
 
         {/* Projeto 5 */}
-        <div>
+        <div className="projeto">
           <div className="w-full flex justify-between items-baseline">
             <span className="text-black dark:text-white font-medium tracking-tight">
               {t("project-title05")}
@@ -94,7 +99,7 @@ export default function PathnamesPage({ params }: Props) {
         </div>
 
         {/* Projeto 6 */}
-        <div>
+        <div className="projeto">
           <div className="w-full flex justify-between items-baseline">
             <span className="text-black dark:text-white font-medium tracking-tight">
               {t("project-title06")}

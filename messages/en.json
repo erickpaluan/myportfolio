@@ -5,8 +5,7 @@
   },
   "Nav": {
     "projects": "Projects",
-    "photos": "Photos",
-    "blog": "Blog"
+    "photos": "Photos"
   },
   "Projects": {
     "title": "Projects",
